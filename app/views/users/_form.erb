@@ -6,3 +6,9 @@
 <br />
 <%= form.label :password_confirmation %><br />
 <%= form.password_field :password_confirmation %><br />
+
+<% unless form.object.new_record? %>
+  <%= form.label :avatar %><br />
+  <%= image_tag @user.avatar.url %>
+  <%= form.file_field :avatar %><br />
+<% end %>
