@@ -3,11 +3,11 @@ This is an example of how to test paperclip with cucumber.
 Base on {authlogic_example}(http://github.com/binarylogic/authlogic_example).
 
 == Setup
-git clone git://github.com/rainchen/authlogic_example.git authlogic_paperclip_example
-cd authlogic_paperclip_example
-cp config/database.yml.example config/database.yml
-rake db:migrate
-rake db:test:prepare
+1. git clone git://github.com/rainchen/authlogic_example.git authlogic_paperclip_example
+2. cd authlogic_paperclip_example
+3. cp config/database.yml.example config/database.yml
+4. rake db:migrate
+5. rake db:test:prepare
 
 == Run cucumber
 cucumber -q
